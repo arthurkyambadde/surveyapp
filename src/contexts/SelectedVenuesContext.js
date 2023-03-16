@@ -23,6 +23,7 @@ export const VenuesProvider = ({ children }) => {
   function handleMonthChange(event) {
     setMonth(event.target.value);
   }
+
   function handleNoteChange(event) {
     setNote(event.target.value);
   }
@@ -84,17 +85,19 @@ export const VenuesProvider = ({ children }) => {
   // }
 
   const scrollDown = () => {
+    console.log(question, "question");
+
     if (question === "__select_venue__") {
       console.log(question, "question");
       // check that venue has been selected before going forward
       if (selectedVenues.length < 2) {
         setHasError(true);
-        return false;
+        return;
       }
     } else if (question) {
       if (!venueRating[section][question]) {
         setHasError(true);
-        return false;
+        return;
       }
     }
     window.scrollBy(0, window.innerHeight); // scroll down by 100vh

@@ -25,13 +25,14 @@ export function Question({
   videoUrl,
 }) {
   const { ref, inView: myElementIsVisible } = useInView({
-    threshold: 0.2,
+    threshold: 0.1,
   });
   const { setQuestion } = useVenue();
 
   useEffect(() => {
     if (myElementIsVisible) {
       setQuestion(id);
+      console.log("question set", id);
     }
   }, [myElementIsVisible, id, setQuestion]);
 

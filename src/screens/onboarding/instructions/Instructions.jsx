@@ -14,6 +14,7 @@ export function Instructions({ title, subtitle, text, imageUrl, id }) {
   useEffect(() => {
     if (myElementIsVisible) {
       setSection(id);
+      console.log("question set", id);
     }
   }, [myElementIsVisible, id, setSection]);
 
