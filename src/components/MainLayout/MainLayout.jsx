@@ -1,16 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
+import { data } from "../../data/data";
+import { VideoIntroduction } from "../../screens/onboarding/video/Video";
+import { Instructions } from "../../screens/onboarding/instructions/Instructions";
 
 export default function MainLayout() {
-  const [data, setData] = useState({});
+  const layout = data.venueRankerLayout;
 
-  useEffect(() => {
-    fetch("data.json")
-      .then((response) => response.json())
-      .then((data) => setData(data))
-      .catch((error) => console.error(error));
-  }, []);
+  return layout.map((item) => {
+    if (item.type === "introduction") {
+      return <VideoIntroduction {...item} key={item.id} />;
+    }
 
-  console.log(data, "data");
-
-  return <div>MainLayout</div>;
+    if (item.type === "instructions") {
+      return <Instructions {...item} key={item.id} />;
+    }
+  });
 }

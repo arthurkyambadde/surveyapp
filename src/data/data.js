@@ -1,20 +1,35 @@
-{
-  {
-    controls_instructions: {
-      text: "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.";
-    }
-  }
+import { ulid } from "ulid";
+import introductionGif from "../assets/sectionsvgs/introduction";
+import castleGif from "../assets/sectionsvgs/castle.gif";
+import gardenGreenImage from "../assets/sectionsvgs/gardenGreen.gif";
+import desertDreamImage from "../assets/sectionsvgs/desert_dream.gif";
+import distinctilyArizonaImage from "../assets/sectionsvgs/distinctly_arizona.gif";
+import industrialImage from "../assets/sectionsvgs/industrial.gif";
+import modernImage from "../assets/sectionsvgs/modern.gif";
+import rustic_yet_chicImage from "../assets/sectionsvgs/rustic_yet_chic.gif";
 
-  {
-    mcqs: {
-      type: "single_select_answers";
-      choices: [
-        { id: ulid(), label: "A", text: "My Favourites" },
-        { id: ulid(), label: "B", text: "This could work" },
-        { id: ulid(), label: "C", text: "Not for me" },
-      ];
-    }
-  }
+const questionIds = {
+  A: ulid(),
+  B: ulid(),
+  C: ulid(),
+  D: ulid(),
+  E: ulid(),
+  F: ulid(),
+};
+
+export const data = {
+  controls_instructions: {
+    text: "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
+  },
+
+  mcqs: {
+    type: "single_select_answers",
+    choices: [
+      { id: ulid(), label: "A", text: "My Favourites" },
+      { id: ulid(), label: "B", text: "This could work" },
+      { id: ulid(), label: "C", text: "Not for me" },
+    ],
+  },
 
   venueRankerLayout: [
     // introduction video
@@ -430,7 +445,7 @@
       type: "introduction",
       id: ulid(),
       title: "Lets talk dates",
-      videoUrl: "url/to/date/img",
+      imageUrl: "url/to/date/img",
     },
 
     // end pages
@@ -441,7 +456,7 @@
       title: `Way to go!
       Your Venue Ranker is complete :) Your info is flittering off to Madge and her team. We'll be in touch soon!`,
     },
-  ];
+  ],
 
   venueRankerQuestions: [
     //venues questions
@@ -659,5 +674,5 @@
       input_type: "text",
       answer: "",
     },
-  ];
-}
+  ],
+};
