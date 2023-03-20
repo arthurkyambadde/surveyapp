@@ -62,7 +62,7 @@ export const data = {
           { id: questionIds["B"], label: "B", text: "Desert dream" },
           { id: questionIds["C"], label: "C", text: "Distinctily arizona" },
           { id: questionIds["D"], label: "D", text: "Industrial" },
-          { id: questionIds["E"], labe: "E", text: "Modern" },
+          { id: questionIds["E"], label: "E", text: "Modern" },
           { id: questionIds["F"], label: "F", text: "Rustic yet Chic" },
         ],
       },
