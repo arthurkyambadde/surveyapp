@@ -37,7 +37,7 @@ export const data = {
       type: "introduction",
       id: ulid(),
       title: "The Venue Ranker",
-      videoUrl: "https://www.youtube.com/embed/1&loop=1",
+      videoUrl: `https://www.youtube.com/embed/E0fPPRiY-5w?autoplay=`,
     },
 
     // form instructions
@@ -445,7 +445,7 @@ export const data = {
       type: "introduction",
       id: ulid(),
       title: "Lets talk dates",
-      imageUrl: "url/to/date/img",
+      imageUrl: desertDreamImage,
     },
 
     // end pages
