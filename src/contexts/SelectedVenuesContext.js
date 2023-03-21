@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from "react";
-import { INITIAL_PLACES_RANKING } from "../data/Screens";
+import { INITIAL_PLACES_RANKING } from "../data/data";
 
 export const VenuesContext = createContext();
 
@@ -85,10 +85,10 @@ export const VenuesProvider = ({ children }) => {
   // }
 
   const scrollDown = () => {
-    console.log(question, "question");
+    // console.log(question, "question");
 
     if (question === "__select_venue__") {
-      console.log(question, "question");
+      // console.log(question, "question");
       // check that venue has been selected before going forward
       if (selectedVenues.length < 2) {
         setHasError(true);
