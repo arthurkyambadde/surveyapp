@@ -17,7 +17,7 @@ export default function MainLayout() {
     }
 
     if (item.type === "multi_choice_question") {
-      return <VenueSelection {...item} />;
+      return <VenueSelection {...item} key={item.id} />;
     }
   });
 }

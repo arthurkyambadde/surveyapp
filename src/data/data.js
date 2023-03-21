@@ -31,6 +31,376 @@ export const data = {
     ],
   },
 
+  STEP_2_QUESTIONS: {
+    [questionIds["A"]]: {
+      instructions: {
+        title: "Garden Greenery",
+        subtitle:
+          "An oasis in the desert, you'll enjoy lush gardens, grassy spaces, and trees!",
+        imageUrl: gardenGreenImage,
+      },
+
+      places: [
+        {
+          id: "garden_01",
+          label: "01",
+          description: "",
+
+          attachment: {
+            text: "Download_Venue Specific Details",
+            link: "https://www.youtube.com/embed/AGifXQlNXHw",
+          },
+        },
+        {
+          id: "garden_02",
+          label: "02",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
+          },
+        },
+        {
+          id: "garden_03",
+          label: "03",
+          question: "Schnep's Farm - Meadow",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
+          },
+          answer: "",
+        },
+        {
+          id: "garden_04",
+          label: "04",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/mL-WYrEq5EM",
+          },
+        },
+        {
+          id: "garden_05",
+          label: "05",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
+          },
+        },
+        {
+          id: "garden_06",
+          label: "06",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
+          },
+        },
+      ],
+    },
+    [questionIds["B"]]: {
+      instructions: {
+        title: "Desert drean",
+        subtitle:
+          "Perfectly pristine desert landscaping and authentic desert backdrops!",
+        imageUrl: desertDreamImage,
+      },
+      attachment: {
+        text: "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+        link: "../to/download Url/of the attachment",
+      },
+      places: [
+        {
+          id: "desert_01",
+          label: "01",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/HrAQPgOEO68",
+          },
+        },
+        {
+          id: "desert_02",
+          label: "02",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/T4Nbf3k06Vs",
+          },
+        },
+      ],
+    },
+    [questionIds["C"]]: {
+      instructions: {
+        title: "Distinctily arizona",
+        subtitle: "The definition of the Southwest's history and present!",
+        imageUrl: distinctilyArizonaImage,
+      },
+      attachment: {
+        text: "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+        link: "../to/download Url/of the attachment",
+      },
+      places: [
+        {
+          id: "arizona_01",
+          label: "01",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
+          },
+        },
+        {
+          id: "arizona_02",
+          label: "02",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/1oTX2dAi5Ig",
+          },
+        },
+        {
+          id: "arizona_03",
+          label: "03",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/MetPMveCal0",
+          },
+        },
+        {
+          id: "arizona_04",
+          label: "04",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/psMcgHpJ-ec",
+          },
+        },
+        {
+          id: "arizona_05",
+          label: "05",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/8UDbpY5-frU",
+          },
+        },
+        {
+          id: "arizona_06",
+          label: "06",
+          question: "The Ocotillo",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/Y6TGV5PQIE",
+          },
+          answer: "",
+        },
+        {
+          id: "arizona_07",
+          label: "07",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
+          },
+        },
+        {
+          id: "arizona_08",
+          label: "08",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
+          },
+        },
+        {
+          id: "arizona_09",
+          label: "09",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/_F-fbyBIXro",
+          },
+        },
+      ],
+    },
+    [questionIds["D"]]: {
+      instructions: {
+        title: "Industrial",
+        subtitle: "Clean, classic, and perfectly pulled together!",
+        imageUrl: industrialImage,
+      },
+      attachment: {
+        text: "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+        link: "../to/download Url/of the attachment",
+      },
+      places: [
+        {
+          id: "industrial_01",
+          label: "01",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/FfNc9n4sIGM",
+          },
+        },
+        {
+          id: "industrial_02",
+          label: "02",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/rwGNjmwVp-o",
+          },
+        },
+      ],
+    },
+    [questionIds["E"]]: {
+      instructions: {
+        title: "Modern",
+        subtitle: "Fun, sleek, and cool!",
+        imageUrl: modernImage,
+      },
+      attachment: {
+        text: "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+        link: "../to/download Url/of the attachment",
+      },
+      places: [
+        {
+          id: "modern_01",
+          label: "01",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/tGrHIo3sh-0",
+          },
+        },
+        {
+          id: "modern_02",
+          label: "02",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/-Gdd9qk9B7s",
+          },
+        },
+        {
+          id: "modern_03",
+          label: "03",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/BQnWf9iXuj8",
+          },
+        },
+      ],
+    },
+    [questionIds["F"]]: {
+      instructions: {
+        title: "	Rustic Yet Chic",
+        subtitle:
+          "Classic and cozy spaces that are classed up and ready for a party",
+        imageUrl: rustic_yet_chicImage,
+      },
+      attachment: {
+        text: "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+        link: "../to/download Url/of the attachment",
+      },
+      places: [
+        {
+          id: "rustic_01",
+          label: "01",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
+          },
+        },
+        {
+          id: "rustic_02",
+          label: "02",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
+          },
+        },
+        {
+          id: "rustic_03",
+          label: "03",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/ezNyNDvRT1U",
+          },
+        },
+        {
+          id: "rustic_04",
+          label: "04",
+          description:
+            "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+          attachment: {
+            text: "Download PDF",
+            link: "https://www.youtube.com/embed/SJ9neqsvNbo",
+          },
+        },
+      ],
+    },
+  },
+
   venueRankerLayout: [
     // introduction video
     {
@@ -70,375 +440,6 @@ export const data = {
     },
 
     //venues layout data
-    {
-      [questionIds["A"]]: {
-        instructions: {
-          title: "Garden Greenery",
-          subtitle:
-            "An oasis in the desert, you'll enjoy lush gardens, grassy spaces, and trees!",
-          imageUrl: gardenGreenImage,
-        },
-
-        places: [
-          {
-            id: "garden_01",
-            label: "01",
-            description: "",
-
-            attachment: {
-              text: "Download_Venue Specific Details",
-              link: "https://www.youtube.com/embed/AGifXQlNXHw",
-            },
-          },
-          {
-            id: "garden_02",
-            label: "02",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
-            },
-          },
-          {
-            id: "garden_03",
-            label: "03",
-            question: "Schnep's Farm - Meadow",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
-            },
-            answer: "",
-          },
-          {
-            id: "garden_04",
-            label: "04",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/mL-WYrEq5EM",
-            },
-          },
-          {
-            id: "garden_05",
-            label: "05",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
-            },
-          },
-          {
-            id: "garden_06",
-            label: "06",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
-            },
-          },
-        ],
-      },
-      [questionIds["B"]]: {
-        instructions: {
-          title: "Desert drean",
-          subtitle:
-            "Perfectly pristine desert landscaping and authentic desert backdrops!",
-          imageUrl: desertDreamImage,
-        },
-        attachment: {
-          text: "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-          link: "../to/download Url/of the attachment",
-        },
-        places: [
-          {
-            id: "desert_01",
-            label: "01",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/HrAQPgOEO68",
-            },
-          },
-          {
-            id: "desert_02",
-            label: "02",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/T4Nbf3k06Vs",
-            },
-          },
-        ],
-      },
-      [questionIds["C"]]: {
-        instructions: {
-          title: "Distinctily arizona",
-          subtitle: "The definition of the Southwest's history and present!",
-          imageUrl: distinctilyArizonaImage,
-        },
-        attachment: {
-          text: "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-          link: "../to/download Url/of the attachment",
-        },
-        places: [
-          {
-            id: "arizona_01",
-            label: "01",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
-            },
-          },
-          {
-            id: "arizona_02",
-            label: "02",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/1oTX2dAi5Ig",
-            },
-          },
-          {
-            id: "arizona_03",
-            label: "03",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/MetPMveCal0",
-            },
-          },
-          {
-            id: "arizona_04",
-            label: "04",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/psMcgHpJ-ec",
-            },
-          },
-          {
-            id: "arizona_05",
-            label: "05",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/8UDbpY5-frU",
-            },
-          },
-          {
-            id: "arizona_06",
-            label: "06",
-            question: "The Ocotillo",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/Y6TGV5PQIE",
-            },
-            answer: "",
-          },
-          {
-            id: "arizona_07",
-            label: "07",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
-            },
-          },
-          {
-            id: "arizona_08",
-            label: "08",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
-            },
-          },
-          {
-            id: "arizona_09",
-            label: "09",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/_F-fbyBIXro",
-            },
-          },
-        ],
-      },
-      [questionIds["D"]]: {
-        instructions: {
-          title: "Industrial",
-          subtitle: "Clean, classic, and perfectly pulled together!",
-          imageUrl: industrialImage,
-        },
-        attachment: {
-          text: "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-          link: "../to/download Url/of the attachment",
-        },
-        places: [
-          {
-            id: "industrial_01",
-            label: "01",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/FfNc9n4sIGM",
-            },
-          },
-          {
-            id: "industrial_02",
-            label: "02",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/rwGNjmwVp-o",
-            },
-          },
-        ],
-      },
-      [questionIds["E"]]: {
-        instructions: {
-          title: "Modern",
-          subtitle: "Fun, sleek, and cool!",
-          imageUrl: modernImage,
-        },
-        attachment: {
-          text: "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-          link: "../to/download Url/of the attachment",
-        },
-        places: [
-          {
-            id: "modern_01",
-            label: "01",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/tGrHIo3sh-0",
-            },
-          },
-          {
-            id: "modern_02",
-            label: "02",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/-Gdd9qk9B7s",
-            },
-          },
-          {
-            id: "modern_03",
-            label: "03",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/BQnWf9iXuj8",
-            },
-          },
-        ],
-      },
-      [questionIds["F"]]: {
-        instructions: {
-          title: "	Rustic Yet Chic",
-          subtitle:
-            "Classic and cozy spaces that are classed up and ready for a party",
-          imageUrl: rustic_yet_chicImage,
-        },
-        attachment: {
-          text: "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-          link: "../to/download Url/of the attachment",
-        },
-        places: [
-          {
-            id: "rustic_01",
-            label: "01",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
-            },
-          },
-          {
-            id: "rustic_02",
-            label: "02",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
-            },
-          },
-          {
-            id: "rustic_03",
-            label: "03",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/ezNyNDvRT1U",
-            },
-          },
-          {
-            id: "rustic_04",
-            label: "04",
-            description:
-              "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
-
-            attachment: {
-              text: "Download PDF",
-              link: "https://www.youtube.com/embed/SJ9neqsvNbo",
-            },
-          },
-        ],
-      },
-    },
 
     //lets talk dates
     {

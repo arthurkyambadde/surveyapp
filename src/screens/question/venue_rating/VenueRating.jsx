@@ -1,22 +1,22 @@
 import React from "react";
 import { useVenue } from "../../../hooks/useVenue";
-import { STEP_2_QUESTIONS } from "../../../data/Screens";
+// import { STEP_2_QUESTIONS } from "../../../data/Screens";
 import { Instructions } from "../../onboarding";
 import { PlaceRating } from "./PlaceRating";
-import AppointmentIntroduction from "../../appointment/AppointmentIntroduction";
-import AppointmentScheduler from "../../appointment/AppointmentScheduler";
-import Note from "../../../components/question/Note";
-import { LEAVE_A_NOTE } from "../../../data/Screens";
+// import AppointmentIntroduction from "../../appointment/AppointmentIntroduction";
+// import AppointmentScheduler from "../../appointment/AppointmentScheduler";
+// import Note from "../../../components/question/Note";
+// import { LEAVE_A_NOTE } from "../../../data/Screens";
+import { data } from "../../../data/data";
 
 export function VenueRating() {
   //
   const { selectedVenues, venueRating, setPlaceRating } = useVenue();
-
+  console.log(selectedVenues, "selected venues");
   return (
     <div className="h-auto relative">
       {selectedVenues.map((item) => {
-        const venue = STEP_2_QUESTIONS[item].instructions;
-        const controlInstructions = STEP_2_QUESTIONS.controlsIntructions;
+        const venue = data.STEP_2_QUESTIONS[item].instructions;
 
         return (
           <section key={item} className="relative">
@@ -27,18 +27,18 @@ export function VenueRating() {
               imageUrl={venue.imageUrl}
             />
             <PlaceRating
-              places={STEP_2_QUESTIONS[item].places}
+              places={data.STEP_2_QUESTIONS[item].places}
               onRatePlace={(placeId, answer) => {
                 setPlaceRating(item, placeId, answer);
               }}
               placeRatings={venueRating[item]}
               venueTitle={venue.title}
             />
-            <Instructions id={item} title={controlInstructions.text} />
+            <Instructions id={item} title={data.controls_instructions.text} />
           </section>
         );
       })}
-      <AppointmentIntroduction />
+      {/* <AppointmentIntroduction />
       <AppointmentScheduler />
       <Note
         title={LEAVE_A_NOTE.title}
@@ -46,7 +46,7 @@ export function VenueRating() {
         id={LEAVE_A_NOTE.id}
         placeholder={LEAVE_A_NOTE.placeholder}
         image={LEAVE_A_NOTE.image}
-      />
+      /> */}
     </div>
   );
 }

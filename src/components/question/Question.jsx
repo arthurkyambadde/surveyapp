@@ -32,7 +32,6 @@ export function Question({
   useEffect(() => {
     if (myElementIsVisible) {
       setQuestion(id);
-      console.log("question set", id);
     }
   }, [myElementIsVisible, id, setQuestion]);
 
