@@ -12,11 +12,14 @@ import { data } from "../../../data/data";
 export function VenueRating() {
   //
   const { selectedVenues, venueRating, setPlaceRating } = useVenue();
-  console.log(selectedVenues, "selected venues");
+
   return (
     <div className="h-auto relative">
       {selectedVenues.map((item) => {
         const venue = data.STEP_2_QUESTIONS[item].instructions;
+
+        const venue_questions = data.venueRankerQuestions[0];
+        const placesquestion = venue_questions[item].places;
 
         return (
           <section key={item} className="relative">
@@ -27,14 +30,19 @@ export function VenueRating() {
               imageUrl={venue.imageUrl}
             />
             <PlaceRating
-              places={data.STEP_2_QUESTIONS[item].places}
+              places={placesquestion}
               onRatePlace={(placeId, answer) => {
                 setPlaceRating(item, placeId, answer);
               }}
               placeRatings={venueRating[item]}
               venueTitle={venue.title}
+              item_id={item}
             />
-            <Instructions id={item} title={data.controls_instructions.text} />
+            <Instructions
+              id={item}
+              title={data.controls_instructions.text}
+              imageUrl={data.controls_instructions.link}
+            />
           </section>
         );
       })}
