@@ -17,9 +17,19 @@ const questionIds = {
   F: ulid(),
 };
 
+export const INITIAL_PLACES_RANKING = {
+  [questionIds["A"]]: {},
+  [questionIds["B"]]: {},
+  [questionIds["C"]]: {},
+  [questionIds["D"]]: {},
+  [questionIds["E"]]: {},
+  [questionIds["F"]]: {},
+};
+
 export const data = {
   controls_instructions: {
     text: "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
+    link: castleGif,
   },
 
   mcqs: {
@@ -32,6 +42,7 @@ export const data = {
   },
 
   STEP_2_QUESTIONS: {
+    type: "single_select",
     [questionIds["A"]]: {
       instructions: {
         title: "Garden Greenery",
