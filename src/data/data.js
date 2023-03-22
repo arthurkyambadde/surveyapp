@@ -7,6 +7,7 @@ import distinctilyArizonaImage from "../assets/sectionsvgs/distinctly_arizona.gi
 import industrialImage from "../assets/sectionsvgs/industrial.gif";
 import modernImage from "../assets/sectionsvgs/modern.gif";
 import rustic_yet_chicImage from "../assets/sectionsvgs/rustic_yet_chic.gif";
+import unicornGif from "../assets/sectionsvgs/Unicorn.gif";
 
 const questionIds = {
   A: ulid(),
@@ -39,6 +40,11 @@ export const data = {
       { id: ulid(), label: "B", text: "This could work" },
       { id: ulid(), label: "C", text: "Not for me" },
     ],
+  },
+
+  end_page: {
+    link: unicornGif,
+    text: "Way to go!\nYour Venue Ranker is complete :) Your info is flittering off to Madge and her team. We'll be in touch soon!",
   },
 
   STEP_2_QUESTIONS: {

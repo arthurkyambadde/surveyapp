@@ -5,6 +5,7 @@ import { Instructions } from "../../screens/onboarding/instructions/Instructions
 import { VenueSelection } from "../../screens/question/venue_selection/VenueSelection";
 import AppointmentIntroduction from "../../screens/appointment/AppointmentIntroduction";
 import AppointmentScheduler from "../../screens/appointment/AppointmentScheduler";
+import End from "../../screens/end/End";
 
 export default function MainLayout() {
   const layout = data.venueRankerLayout;
@@ -34,6 +35,7 @@ export default function MainLayout() {
           return <AppointmentScheduler {...item} key={item.id} />;
         }
       })}
+      <End />
     </>
   );
 }
