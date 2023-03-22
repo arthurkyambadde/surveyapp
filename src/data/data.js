@@ -630,6 +630,7 @@ export const data = {
     },
 
     {
+      id: ulid(),
       type: "single_select_question",
       introduction: ` Venue availability differs drastically based on the date and day you
         decide to have your wedding. How flexible are you when it comes to
@@ -671,19 +672,24 @@ export const data = {
     },
 
     {
+      id: ulid(),
       type: "description",
       question: " What date did you have in mind?",
       subtile:
         "If you havent decided just enter any date for this coming month",
       input_type: "date",
+      link: gardenGreenImage,
       answer: "",
     },
     {
+      id: ulid(),
       type: "description",
       question: "Notes for your fairy godmother about venue selection",
       subtitle:
         "If there is anything that needs to be renewed or mentioned additionally now is the time",
       input_type: "text",
+      placeHolder: "Type your answer here",
+      link: gardenGreenImage,
       answer: "",
     },
   ],
