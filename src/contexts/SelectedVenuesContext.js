@@ -14,8 +14,13 @@ export const VenuesProvider = ({ children }) => {
   const [month, setMonth] = useState("");
   const [year, setYear] = useState("");
   const [note, setNote] = useState("");
+  const [inputText, setInputText] = useState("");
 
   // handle date input
+  function handleTextInputChange(event) {
+    setInputText(event.target.value);
+  }
+
   function handleDayChange(event) {
     setDay(event.target.value);
   }
@@ -132,6 +137,8 @@ export const VenuesProvider = ({ children }) => {
         month,
         year,
         note,
+        handleTextInputChange,
+        inputText,
       }}
     >
       {children}
