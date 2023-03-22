@@ -25,7 +25,7 @@ export function Question({
   videoUrl,
 }) {
   const { ref, inView: myElementIsVisible } = useInView({
-    threshold: 0.1,
+    threshold: 0.5,
   });
   const { setQuestion } = useVenue();
 

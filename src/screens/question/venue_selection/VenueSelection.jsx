@@ -1,7 +1,6 @@
 import React from "react";
 import { Question } from "../../../components/question/Question";
 import { useVenue } from "../../../hooks/useVenue";
-import { STEP_1_QUESTION } from "../../../data/Screens";
 import { VenueRating } from "../venue_rating/VenueRating";
 
 export function VenueSelection(props) {
