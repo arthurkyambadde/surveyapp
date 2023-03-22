@@ -20,7 +20,6 @@ export function Question({
   selectedValue,
   attachment,
   superId,
-  venueTitle,
   imageUrl,
   videoUrl,
 }) {
