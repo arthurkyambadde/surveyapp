@@ -1,4 +1,5 @@
 import React from "react";
+import { useVenue } from "../../hooks/useVenue";
 
 export default function Text({
   name,
